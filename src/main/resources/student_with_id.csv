@@ -1,0 +1,1001 @@
+id,name,joiningDate,course,subjects
+1,Student 1,02-01-2023,Python,AI
+2,Student 2,03-01-2023,JavaScript,Angular
+3,Student 3,04-01-2023,DevOps,Docker
+4,Student 4,05-01-2023,Java,Spring Boot
+5,Student 5,06-01-2023,Python,ML
+6,Student 6,07-01-2023,JavaScript,React
+7,Student 7,08-01-2023,DevOps,Kubernetes
+8,Student 8,09-01-2023,Java,Spring Boot
+9,Student 9,10-01-2023,Python,Data Science
+10,Student 10,11-01-2023,JavaScript,NodeJS
+11,Student 11,12-01-2023,DevOps,CI/CD
+12,Student 12,13-01-2023,Java,Spring Boot
+13,Student 13,14-01-2023,Python,AI
+14,Student 14,15-01-2023,JavaScript,Angular
+15,Student 15,16-01-2023,DevOps,Docker
+16,Student 16,17-01-2023,Java,Spring Boot
+17,Student 17,18-01-2023,Python,ML
+18,Student 18,19-01-2023,JavaScript,React
+19,Student 19,20-01-2023,DevOps,Kubernetes
+20,Student 20,21-01-2023,Java,Spring Boot
+21,Student 21,22-01-2023,Python,Data Science
+22,Student 22,23-01-2023,JavaScript,NodeJS
+23,Student 23,24-01-2023,DevOps,CI/CD
+24,Student 24,25-01-2023,Java,Spring Boot
+25,Student 25,26-01-2023,Python,AI
+26,Student 26,27-01-2023,JavaScript,Angular
+27,Student 27,28-01-2023,DevOps,Docker
+28,Student 28,29-01-2023,Java,Spring Boot
+29,Student 29,30-01-2023,Python,ML
+30,Student 30,31-01-2023,JavaScript,React
+31,Student 31,01-02-2023,DevOps,Kubernetes
+32,Student 32,02-02-2023,Java,Spring Boot
+33,Student 33,03-02-2023,Python,Data Science
+34,Student 34,04-02-2023,JavaScript,NodeJS
+35,Student 35,05-02-2023,DevOps,CI/CD
+36,Student 36,06-02-2023,Java,Spring Boot
+37,Student 37,07-02-2023,Python,AI
+38,Student 38,08-02-2023,JavaScript,Angular
+39,Student 39,09-02-2023,DevOps,Docker
+40,Student 40,10-02-2023,Java,Spring Boot
+41,Student 41,11-02-2023,Python,ML
+42,Student 42,12-02-2023,JavaScript,React
+43,Student 43,13-02-2023,DevOps,Kubernetes
+44,Student 44,14-02-2023,Java,Spring Boot
+45,Student 45,15-02-2023,Python,Data Science
+46,Student 46,16-02-2023,JavaScript,NodeJS
+47,Student 47,17-02-2023,DevOps,CI/CD
+48,Student 48,18-02-2023,Java,Spring Boot
+49,Student 49,19-02-2023,Python,AI
+50,Student 50,20-02-2023,JavaScript,Angular
+51,Student 51,21-02-2023,DevOps,Docker
+52,Student 52,22-02-2023,Java,Spring Boot
+53,Student 53,23-02-2023,Python,ML
+54,Student 54,24-02-2023,JavaScript,React
+55,Student 55,25-02-2023,DevOps,Kubernetes
+56,Student 56,26-02-2023,Java,Spring Boot
+57,Student 57,27-02-2023,Python,Data Science
+58,Student 58,28-02-2023,JavaScript,NodeJS
+59,Student 59,01-03-2023,DevOps,CI/CD
+60,Student 60,02-03-2023,Java,Spring Boot
+61,Student 61,03-03-2023,Python,AI
+62,Student 62,04-03-2023,JavaScript,Angular
+63,Student 63,05-03-2023,DevOps,Docker
+64,Student 64,06-03-2023,Java,Spring Boot
+65,Student 65,07-03-2023,Python,ML
+66,Student 66,08-03-2023,JavaScript,React
+67,Student 67,09-03-2023,DevOps,Kubernetes
+68,Student 68,10-03-2023,Java,Spring Boot
+69,Student 69,11-03-2023,Python,Data Science
+70,Student 70,12-03-2023,JavaScript,NodeJS
+71,Student 71,13-03-2023,DevOps,CI/CD
+72,Student 72,14-03-2023,Java,Spring Boot
+73,Student 73,15-03-2023,Python,AI
+74,Student 74,16-03-2023,JavaScript,Angular
+75,Student 75,17-03-2023,DevOps,Docker
+76,Student 76,18-03-2023,Java,Spring Boot
+77,Student 77,19-03-2023,Python,ML
+78,Student 78,20-03-2023,JavaScript,React
+79,Student 79,21-03-2023,DevOps,Kubernetes
+80,Student 80,22-03-2023,Java,Spring Boot
+81,Student 81,23-03-2023,Python,Data Science
+82,Student 82,24-03-2023,JavaScript,NodeJS
+83,Student 83,25-03-2023,DevOps,CI/CD
+84,Student 84,26-03-2023,Java,Spring Boot
+85,Student 85,27-03-2023,Python,AI
+86,Student 86,28-03-2023,JavaScript,Angular
+87,Student 87,29-03-2023,DevOps,Docker
+88,Student 88,30-03-2023,Java,Spring Boot
+89,Student 89,31-03-2023,Python,ML
+90,Student 90,01-04-2023,JavaScript,React
+91,Student 91,02-04-2023,DevOps,Kubernetes
+92,Student 92,03-04-2023,Java,Spring Boot
+93,Student 93,04-04-2023,Python,Data Science
+94,Student 94,05-04-2023,JavaScript,NodeJS
+95,Student 95,06-04-2023,DevOps,CI/CD
+96,Student 96,07-04-2023,Java,Spring Boot
+97,Student 97,08-04-2023,Python,AI
+98,Student 98,09-04-2023,JavaScript,Angular
+99,Student 99,10-04-2023,DevOps,Docker
+100,Student 100,11-04-2023,Java,Spring Boot
+101,Student 101,12-04-2023,Python,ML
+102,Student 102,13-04-2023,JavaScript,React
+103,Student 103,14-04-2023,DevOps,Kubernetes
+104,Student 104,15-04-2023,Java,Spring Boot
+105,Student 105,16-04-2023,Python,Data Science
+106,Student 106,17-04-2023,JavaScript,NodeJS
+107,Student 107,18-04-2023,DevOps,CI/CD
+108,Student 108,19-04-2023,Java,Spring Boot
+109,Student 109,20-04-2023,Python,AI
+110,Student 110,21-04-2023,JavaScript,Angular
+111,Student 111,22-04-2023,DevOps,Docker
+112,Student 112,23-04-2023,Java,Spring Boot
+113,Student 113,24-04-2023,Python,ML
+114,Student 114,25-04-2023,JavaScript,React
+115,Student 115,26-04-2023,DevOps,Kubernetes
+116,Student 116,27-04-2023,Java,Spring Boot
+117,Student 117,28-04-2023,Python,Data Science
+118,Student 118,29-04-2023,JavaScript,NodeJS
+119,Student 119,30-04-2023,DevOps,CI/CD
+120,Student 120,01-05-2023,Java,Spring Boot
+121,Student 121,02-05-2023,Python,AI
+122,Student 122,03-05-2023,JavaScript,Angular
+123,Student 123,04-05-2023,DevOps,Docker
+124,Student 124,05-05-2023,Java,Spring Boot
+125,Student 125,06-05-2023,Python,ML
+126,Student 126,07-05-2023,JavaScript,React
+127,Student 127,08-05-2023,DevOps,Kubernetes
+128,Student 128,09-05-2023,Java,Spring Boot
+129,Student 129,10-05-2023,Python,Data Science
+130,Student 130,11-05-2023,JavaScript,NodeJS
+131,Student 131,12-05-2023,DevOps,CI/CD
+132,Student 132,13-05-2023,Java,Spring Boot
+133,Student 133,14-05-2023,Python,AI
+134,Student 134,15-05-2023,JavaScript,Angular
+135,Student 135,16-05-2023,DevOps,Docker
+136,Student 136,17-05-2023,Java,Spring Boot
+137,Student 137,18-05-2023,Python,ML
+138,Student 138,19-05-2023,JavaScript,React
+139,Student 139,20-05-2023,DevOps,Kubernetes
+140,Student 140,21-05-2023,Java,Spring Boot
+141,Student 141,22-05-2023,Python,Data Science
+142,Student 142,23-05-2023,JavaScript,NodeJS
+143,Student 143,24-05-2023,DevOps,CI/CD
+144,Student 144,25-05-2023,Java,Spring Boot
+145,Student 145,26-05-2023,Python,AI
+146,Student 146,27-05-2023,JavaScript,Angular
+147,Student 147,28-05-2023,DevOps,Docker
+148,Student 148,29-05-2023,Java,Spring Boot
+149,Student 149,30-05-2023,Python,ML
+150,Student 150,31-05-2023,JavaScript,React
+151,Student 151,01-06-2023,DevOps,Kubernetes
+152,Student 152,02-06-2023,Java,Spring Boot
+153,Student 153,03-06-2023,Python,Data Science
+154,Student 154,04-06-2023,JavaScript,NodeJS
+155,Student 155,05-06-2023,DevOps,CI/CD
+156,Student 156,06-06-2023,Java,Spring Boot
+157,Student 157,07-06-2023,Python,AI
+158,Student 158,08-06-2023,JavaScript,Angular
+159,Student 159,09-06-2023,DevOps,Docker
+160,Student 160,10-06-2023,Java,Spring Boot
+161,Student 161,11-06-2023,Python,ML
+162,Student 162,12-06-2023,JavaScript,React
+163,Student 163,13-06-2023,DevOps,Kubernetes
+164,Student 164,14-06-2023,Java,Spring Boot
+165,Student 165,15-06-2023,Python,Data Science
+166,Student 166,16-06-2023,JavaScript,NodeJS
+167,Student 167,17-06-2023,DevOps,CI/CD
+168,Student 168,18-06-2023,Java,Spring Boot
+169,Student 169,19-06-2023,Python,AI
+170,Student 170,20-06-2023,JavaScript,Angular
+171,Student 171,21-06-2023,DevOps,Docker
+172,Student 172,22-06-2023,Java,Spring Boot
+173,Student 173,23-06-2023,Python,ML
+174,Student 174,24-06-2023,JavaScript,React
+175,Student 175,25-06-2023,DevOps,Kubernetes
+176,Student 176,26-06-2023,Java,Spring Boot
+177,Student 177,27-06-2023,Python,Data Science
+178,Student 178,28-06-2023,JavaScript,NodeJS
+179,Student 179,29-06-2023,DevOps,CI/CD
+180,Student 180,30-06-2023,Java,Spring Boot
+181,Student 181,01-07-2023,Python,AI
+182,Student 182,02-07-2023,JavaScript,Angular
+183,Student 183,03-07-2023,DevOps,Docker
+184,Student 184,04-07-2023,Java,Spring Boot
+185,Student 185,05-07-2023,Python,ML
+186,Student 186,06-07-2023,JavaScript,React
+187,Student 187,07-07-2023,DevOps,Kubernetes
+188,Student 188,08-07-2023,Java,Spring Boot
+189,Student 189,09-07-2023,Python,Data Science
+190,Student 190,10-07-2023,JavaScript,NodeJS
+191,Student 191,11-07-2023,DevOps,CI/CD
+192,Student 192,12-07-2023,Java,Spring Boot
+193,Student 193,13-07-2023,Python,AI
+194,Student 194,14-07-2023,JavaScript,Angular
+195,Student 195,15-07-2023,DevOps,Docker
+196,Student 196,16-07-2023,Java,Spring Boot
+197,Student 197,17-07-2023,Python,ML
+198,Student 198,18-07-2023,JavaScript,React
+199,Student 199,19-07-2023,DevOps,Kubernetes
+200,Student 200,20-07-2023,Java,Spring Boot
+201,Student 201,21-07-2023,Python,Data Science
+202,Student 202,22-07-2023,JavaScript,NodeJS
+203,Student 203,23-07-2023,DevOps,CI/CD
+204,Student 204,24-07-2023,Java,Spring Boot
+205,Student 205,25-07-2023,Python,AI
+206,Student 206,26-07-2023,JavaScript,Angular
+207,Student 207,27-07-2023,DevOps,Docker
+208,Student 208,28-07-2023,Java,Spring Boot
+209,Student 209,29-07-2023,Python,ML
+210,Student 210,30-07-2023,JavaScript,React
+211,Student 211,31-07-2023,DevOps,Kubernetes
+212,Student 212,01-08-2023,Java,Spring Boot
+213,Student 213,02-08-2023,Python,Data Science
+214,Student 214,03-08-2023,JavaScript,NodeJS
+215,Student 215,04-08-2023,DevOps,CI/CD
+216,Student 216,05-08-2023,Java,Spring Boot
+217,Student 217,06-08-2023,Python,AI
+218,Student 218,07-08-2023,JavaScript,Angular
+219,Student 219,08-08-2023,DevOps,Docker
+220,Student 220,09-08-2023,Java,Spring Boot
+221,Student 221,10-08-2023,Python,ML
+222,Student 222,11-08-2023,JavaScript,React
+223,Student 223,12-08-2023,DevOps,Kubernetes
+224,Student 224,13-08-2023,Java,Spring Boot
+225,Student 225,14-08-2023,Python,Data Science
+226,Student 226,15-08-2023,JavaScript,NodeJS
+227,Student 227,16-08-2023,DevOps,CI/CD
+228,Student 228,17-08-2023,Java,Spring Boot
+229,Student 229,18-08-2023,Python,AI
+230,Student 230,19-08-2023,JavaScript,Angular
+231,Student 231,20-08-2023,DevOps,Docker
+232,Student 232,21-08-2023,Java,Spring Boot
+233,Student 233,22-08-2023,Python,ML
+234,Student 234,23-08-2023,JavaScript,React
+235,Student 235,24-08-2023,DevOps,Kubernetes
+236,Student 236,25-08-2023,Java,Spring Boot
+237,Student 237,26-08-2023,Python,Data Science
+238,Student 238,27-08-2023,JavaScript,NodeJS
+239,Student 239,28-08-2023,DevOps,CI/CD
+240,Student 240,29-08-2023,Java,Spring Boot
+241,Student 241,30-08-2023,Python,AI
+242,Student 242,31-08-2023,JavaScript,Angular
+243,Student 243,01-09-2023,DevOps,Docker
+244,Student 244,02-09-2023,Java,Spring Boot
+245,Student 245,03-09-2023,Python,ML
+246,Student 246,04-09-2023,JavaScript,React
+247,Student 247,05-09-2023,DevOps,Kubernetes
+248,Student 248,06-09-2023,Java,Spring Boot
+249,Student 249,07-09-2023,Python,Data Science
+250,Student 250,08-09-2023,JavaScript,NodeJS
+251,Student 251,09-09-2023,DevOps,CI/CD
+252,Student 252,10-09-2023,Java,Spring Boot
+253,Student 253,11-09-2023,Python,AI
+254,Student 254,12-09-2023,JavaScript,Angular
+255,Student 255,13-09-2023,DevOps,Docker
+256,Student 256,14-09-2023,Java,Spring Boot
+257,Student 257,15-09-2023,Python,ML
+258,Student 258,16-09-2023,JavaScript,React
+259,Student 259,17-09-2023,DevOps,Kubernetes
+260,Student 260,18-09-2023,Java,Spring Boot
+261,Student 261,19-09-2023,Python,Data Science
+262,Student 262,20-09-2023,JavaScript,NodeJS
+263,Student 263,21-09-2023,DevOps,CI/CD
+264,Student 264,22-09-2023,Java,Spring Boot
+265,Student 265,23-09-2023,Python,AI
+266,Student 266,24-09-2023,JavaScript,Angular
+267,Student 267,25-09-2023,DevOps,Docker
+268,Student 268,26-09-2023,Java,Spring Boot
+269,Student 269,27-09-2023,Python,ML
+270,Student 270,28-09-2023,JavaScript,React
+271,Student 271,29-09-2023,DevOps,Kubernetes
+272,Student 272,30-09-2023,Java,Spring Boot
+273,Student 273,01-10-2023,Python,Data Science
+274,Student 274,02-10-2023,JavaScript,NodeJS
+275,Student 275,03-10-2023,DevOps,CI/CD
+276,Student 276,04-10-2023,Java,Spring Boot
+277,Student 277,05-10-2023,Python,AI
+278,Student 278,06-10-2023,JavaScript,Angular
+279,Student 279,07-10-2023,DevOps,Docker
+280,Student 280,08-10-2023,Java,Spring Boot
+281,Student 281,09-10-2023,Python,ML
+282,Student 282,10-10-2023,JavaScript,React
+283,Student 283,11-10-2023,DevOps,Kubernetes
+284,Student 284,12-10-2023,Java,Spring Boot
+285,Student 285,13-10-2023,Python,Data Science
+286,Student 286,14-10-2023,JavaScript,NodeJS
+287,Student 287,15-10-2023,DevOps,CI/CD
+288,Student 288,16-10-2023,Java,Spring Boot
+289,Student 289,17-10-2023,Python,AI
+290,Student 290,18-10-2023,JavaScript,Angular
+291,Student 291,19-10-2023,DevOps,Docker
+292,Student 292,20-10-2023,Java,Spring Boot
+293,Student 293,21-10-2023,Python,ML
+294,Student 294,22-10-2023,JavaScript,React
+295,Student 295,23-10-2023,DevOps,Kubernetes
+296,Student 296,24-10-2023,Java,Spring Boot
+297,Student 297,25-10-2023,Python,Data Science
+298,Student 298,26-10-2023,JavaScript,NodeJS
+299,Student 299,27-10-2023,DevOps,CI/CD
+300,Student 300,28-10-2023,Java,Spring Boot
+301,Student 301,29-10-2023,Python,AI
+302,Student 302,30-10-2023,JavaScript,Angular
+303,Student 303,31-10-2023,DevOps,Docker
+304,Student 304,01-11-2023,Java,Spring Boot
+305,Student 305,02-11-2023,Python,ML
+306,Student 306,03-11-2023,JavaScript,React
+307,Student 307,04-11-2023,DevOps,Kubernetes
+308,Student 308,05-11-2023,Java,Spring Boot
+309,Student 309,06-11-2023,Python,Data Science
+310,Student 310,07-11-2023,JavaScript,NodeJS
+311,Student 311,08-11-2023,DevOps,CI/CD
+312,Student 312,09-11-2023,Java,Spring Boot
+313,Student 313,10-11-2023,Python,AI
+314,Student 314,11-11-2023,JavaScript,Angular
+315,Student 315,12-11-2023,DevOps,Docker
+316,Student 316,13-11-2023,Java,Spring Boot
+317,Student 317,14-11-2023,Python,ML
+318,Student 318,15-11-2023,JavaScript,React
+319,Student 319,16-11-2023,DevOps,Kubernetes
+320,Student 320,17-11-2023,Java,Spring Boot
+321,Student 321,18-11-2023,Python,Data Science
+322,Student 322,19-11-2023,JavaScript,NodeJS
+323,Student 323,20-11-2023,DevOps,CI/CD
+324,Student 324,21-11-2023,Java,Spring Boot
+325,Student 325,22-11-2023,Python,AI
+326,Student 326,23-11-2023,JavaScript,Angular
+327,Student 327,24-11-2023,DevOps,Docker
+328,Student 328,25-11-2023,Java,Spring Boot
+329,Student 329,26-11-2023,Python,ML
+330,Student 330,27-11-2023,JavaScript,React
+331,Student 331,28-11-2023,DevOps,Kubernetes
+332,Student 332,29-11-2023,Java,Spring Boot
+333,Student 333,30-11-2023,Python,Data Science
+334,Student 334,01-12-2023,JavaScript,NodeJS
+335,Student 335,02-12-2023,DevOps,CI/CD
+336,Student 336,03-12-2023,Java,Spring Boot
+337,Student 337,04-12-2023,Python,AI
+338,Student 338,05-12-2023,JavaScript,Angular
+339,Student 339,06-12-2023,DevOps,Docker
+340,Student 340,07-12-2023,Java,Spring Boot
+341,Student 341,08-12-2023,Python,ML
+342,Student 342,09-12-2023,JavaScript,React
+343,Student 343,10-12-2023,DevOps,Kubernetes
+344,Student 344,11-12-2023,Java,Spring Boot
+345,Student 345,12-12-2023,Python,Data Science
+346,Student 346,13-12-2023,JavaScript,NodeJS
+347,Student 347,14-12-2023,DevOps,CI/CD
+348,Student 348,15-12-2023,Java,Spring Boot
+349,Student 349,16-12-2023,Python,AI
+350,Student 350,17-12-2023,JavaScript,Angular
+351,Student 351,18-12-2023,DevOps,Docker
+352,Student 352,19-12-2023,Java,Spring Boot
+353,Student 353,20-12-2023,Python,ML
+354,Student 354,21-12-2023,JavaScript,React
+355,Student 355,22-12-2023,DevOps,Kubernetes
+356,Student 356,23-12-2023,Java,Spring Boot
+357,Student 357,24-12-2023,Python,Data Science
+358,Student 358,25-12-2023,JavaScript,NodeJS
+359,Student 359,26-12-2023,DevOps,CI/CD
+360,Student 360,27-12-2023,Java,Spring Boot
+361,Student 361,28-12-2023,Python,AI
+362,Student 362,29-12-2023,JavaScript,Angular
+363,Student 363,30-12-2023,DevOps,Docker
+364,Student 364,31-12-2023,Java,Spring Boot
+365,Student 365,01-01-2024,Python,ML
+366,Student 366,02-01-2024,JavaScript,React
+367,Student 367,03-01-2024,DevOps,Kubernetes
+368,Student 368,04-01-2024,Java,Spring Boot
+369,Student 369,05-01-2024,Python,Data Science
+370,Student 370,06-01-2024,JavaScript,NodeJS
+371,Student 371,07-01-2024,DevOps,CI/CD
+372,Student 372,08-01-2024,Java,Spring Boot
+373,Student 373,09-01-2024,Python,AI
+374,Student 374,10-01-2024,JavaScript,Angular
+375,Student 375,11-01-2024,DevOps,Docker
+376,Student 376,12-01-2024,Java,Spring Boot
+377,Student 377,13-01-2024,Python,ML
+378,Student 378,14-01-2024,JavaScript,React
+379,Student 379,15-01-2024,DevOps,Kubernetes
+380,Student 380,16-01-2024,Java,Spring Boot
+381,Student 381,17-01-2024,Python,Data Science
+382,Student 382,18-01-2024,JavaScript,NodeJS
+383,Student 383,19-01-2024,DevOps,CI/CD
+384,Student 384,20-01-2024,Java,Spring Boot
+385,Student 385,21-01-2024,Python,AI
+386,Student 386,22-01-2024,JavaScript,Angular
+387,Student 387,23-01-2024,DevOps,Docker
+388,Student 388,24-01-2024,Java,Spring Boot
+389,Student 389,25-01-2024,Python,ML
+390,Student 390,26-01-2024,JavaScript,React
+391,Student 391,27-01-2024,DevOps,Kubernetes
+392,Student 392,28-01-2024,Java,Spring Boot
+393,Student 393,29-01-2024,Python,Data Science
+394,Student 394,30-01-2024,JavaScript,NodeJS
+395,Student 395,31-01-2024,DevOps,CI/CD
+396,Student 396,01-02-2024,Java,Spring Boot
+397,Student 397,02-02-2024,Python,AI
+398,Student 398,03-02-2024,JavaScript,Angular
+399,Student 399,04-02-2024,DevOps,Docker
+400,Student 400,05-02-2024,Java,Spring Boot
+401,Student 401,06-02-2024,Python,ML
+402,Student 402,07-02-2024,JavaScript,React
+403,Student 403,08-02-2024,DevOps,Kubernetes
+404,Student 404,09-02-2024,Java,Spring Boot
+405,Student 405,10-02-2024,Python,Data Science
+406,Student 406,11-02-2024,JavaScript,NodeJS
+407,Student 407,12-02-2024,DevOps,CI/CD
+408,Student 408,13-02-2024,Java,Spring Boot
+409,Student 409,14-02-2024,Python,AI
+410,Student 410,15-02-2024,JavaScript,Angular
+411,Student 411,16-02-2024,DevOps,Docker
+412,Student 412,17-02-2024,Java,Spring Boot
+413,Student 413,18-02-2024,Python,ML
+414,Student 414,19-02-2024,JavaScript,React
+415,Student 415,20-02-2024,DevOps,Kubernetes
+416,Student 416,21-02-2024,Java,Spring Boot
+417,Student 417,22-02-2024,Python,Data Science
+418,Student 418,23-02-2024,JavaScript,NodeJS
+419,Student 419,24-02-2024,DevOps,CI/CD
+420,Student 420,25-02-2024,Java,Spring Boot
+421,Student 421,26-02-2024,Python,AI
+422,Student 422,27-02-2024,JavaScript,Angular
+423,Student 423,28-02-2024,DevOps,Docker
+424,Student 424,29-02-2024,Java,Spring Boot
+425,Student 425,01-03-2024,Python,ML
+426,Student 426,02-03-2024,JavaScript,React
+427,Student 427,03-03-2024,DevOps,Kubernetes
+428,Student 428,04-03-2024,Java,Spring Boot
+429,Student 429,05-03-2024,Python,Data Science
+430,Student 430,06-03-2024,JavaScript,NodeJS
+431,Student 431,07-03-2024,DevOps,CI/CD
+432,Student 432,08-03-2024,Java,Spring Boot
+433,Student 433,09-03-2024,Python,AI
+434,Student 434,10-03-2024,JavaScript,Angular
+435,Student 435,11-03-2024,DevOps,Docker
+436,Student 436,12-03-2024,Java,Spring Boot
+437,Student 437,13-03-2024,Python,ML
+438,Student 438,14-03-2024,JavaScript,React
+439,Student 439,15-03-2024,DevOps,Kubernetes
+440,Student 440,16-03-2024,Java,Spring Boot
+441,Student 441,17-03-2024,Python,Data Science
+442,Student 442,18-03-2024,JavaScript,NodeJS
+443,Student 443,19-03-2024,DevOps,CI/CD
+444,Student 444,20-03-2024,Java,Spring Boot
+445,Student 445,21-03-2024,Python,AI
+446,Student 446,22-03-2024,JavaScript,Angular
+447,Student 447,23-03-2024,DevOps,Docker
+448,Student 448,24-03-2024,Java,Spring Boot
+449,Student 449,25-03-2024,Python,ML
+450,Student 450,26-03-2024,JavaScript,React
+451,Student 451,27-03-2024,DevOps,Kubernetes
+452,Student 452,28-03-2024,Java,Spring Boot
+453,Student 453,29-03-2024,Python,Data Science
+454,Student 454,30-03-2024,JavaScript,NodeJS
+455,Student 455,31-03-2024,DevOps,CI/CD
+456,Student 456,01-04-2024,Java,Spring Boot
+457,Student 457,02-04-2024,Python,AI
+458,Student 458,03-04-2024,JavaScript,Angular
+459,Student 459,04-04-2024,DevOps,Docker
+460,Student 460,05-04-2024,Java,Spring Boot
+461,Student 461,06-04-2024,Python,ML
+462,Student 462,07-04-2024,JavaScript,React
+463,Student 463,08-04-2024,DevOps,Kubernetes
+464,Student 464,09-04-2024,Java,Spring Boot
+465,Student 465,10-04-2024,Python,Data Science
+466,Student 466,11-04-2024,JavaScript,NodeJS
+467,Student 467,12-04-2024,DevOps,CI/CD
+468,Student 468,13-04-2024,Java,Spring Boot
+469,Student 469,14-04-2024,Python,AI
+470,Student 470,15-04-2024,JavaScript,Angular
+471,Student 471,16-04-2024,DevOps,Docker
+472,Student 472,17-04-2024,Java,Spring Boot
+473,Student 473,18-04-2024,Python,ML
+474,Student 474,19-04-2024,JavaScript,React
+475,Student 475,20-04-2024,DevOps,Kubernetes
+476,Student 476,21-04-2024,Java,Spring Boot
+477,Student 477,22-04-2024,Python,Data Science
+478,Student 478,23-04-2024,JavaScript,NodeJS
+479,Student 479,24-04-2024,DevOps,CI/CD
+480,Student 480,25-04-2024,Java,Spring Boot
+481,Student 481,26-04-2024,Python,AI
+482,Student 482,27-04-2024,JavaScript,Angular
+483,Student 483,28-04-2024,DevOps,Docker
+484,Student 484,29-04-2024,Java,Spring Boot
+485,Student 485,30-04-2024,Python,ML
+486,Student 486,01-05-2024,JavaScript,React
+487,Student 487,02-05-2024,DevOps,Kubernetes
+488,Student 488,03-05-2024,Java,Spring Boot
+489,Student 489,04-05-2024,Python,Data Science
+490,Student 490,05-05-2024,JavaScript,NodeJS
+491,Student 491,06-05-2024,DevOps,CI/CD
+492,Student 492,07-05-2024,Java,Spring Boot
+493,Student 493,08-05-2024,Python,AI
+494,Student 494,09-05-2024,JavaScript,Angular
+495,Student 495,10-05-2024,DevOps,Docker
+496,Student 496,11-05-2024,Java,Spring Boot
+497,Student 497,12-05-2024,Python,ML
+498,Student 498,13-05-2024,JavaScript,React
+499,Student 499,14-05-2024,DevOps,Kubernetes
+500,Student 500,15-05-2024,Java,Spring Boot
+501,Student 501,16-05-2024,Python,Data Science
+502,Student 502,17-05-2024,JavaScript,NodeJS
+503,Student 503,18-05-2024,DevOps,CI/CD
+504,Student 504,19-05-2024,Java,Spring Boot
+505,Student 505,20-05-2024,Python,AI
+506,Student 506,21-05-2024,JavaScript,Angular
+507,Student 507,22-05-2024,DevOps,Docker
+508,Student 508,23-05-2024,Java,Spring Boot
+509,Student 509,24-05-2024,Python,ML
+510,Student 510,25-05-2024,JavaScript,React
+511,Student 511,26-05-2024,DevOps,Kubernetes
+512,Student 512,27-05-2024,Java,Spring Boot
+513,Student 513,28-05-2024,Python,Data Science
+514,Student 514,29-05-2024,JavaScript,NodeJS
+515,Student 515,30-05-2024,DevOps,CI/CD
+516,Student 516,31-05-2024,Java,Spring Boot
+517,Student 517,01-06-2024,Python,AI
+518,Student 518,02-06-2024,JavaScript,Angular
+519,Student 519,03-06-2024,DevOps,Docker
+520,Student 520,04-06-2024,Java,Spring Boot
+521,Student 521,05-06-2024,Python,ML
+522,Student 522,06-06-2024,JavaScript,React
+523,Student 523,07-06-2024,DevOps,Kubernetes
+524,Student 524,08-06-2024,Java,Spring Boot
+525,Student 525,09-06-2024,Python,Data Science
+526,Student 526,10-06-2024,JavaScript,NodeJS
+527,Student 527,11-06-2024,DevOps,CI/CD
+528,Student 528,12-06-2024,Java,Spring Boot
+529,Student 529,13-06-2024,Python,AI
+530,Student 530,14-06-2024,JavaScript,Angular
+531,Student 531,15-06-2024,DevOps,Docker
+532,Student 532,16-06-2024,Java,Spring Boot
+533,Student 533,17-06-2024,Python,ML
+534,Student 534,18-06-2024,JavaScript,React
+535,Student 535,19-06-2024,DevOps,Kubernetes
+536,Student 536,20-06-2024,Java,Spring Boot
+537,Student 537,21-06-2024,Python,Data Science
+538,Student 538,22-06-2024,JavaScript,NodeJS
+539,Student 539,23-06-2024,DevOps,CI/CD
+540,Student 540,24-06-2024,Java,Spring Boot
+541,Student 541,25-06-2024,Python,AI
+542,Student 542,26-06-2024,JavaScript,Angular
+543,Student 543,27-06-2024,DevOps,Docker
+544,Student 544,28-06-2024,Java,Spring Boot
+545,Student 545,29-06-2024,Python,ML
+546,Student 546,30-06-2024,JavaScript,React
+547,Student 547,01-07-2024,DevOps,Kubernetes
+548,Student 548,02-07-2024,Java,Spring Boot
+549,Student 549,03-07-2024,Python,Data Science
+550,Student 550,04-07-2024,JavaScript,NodeJS
+551,Student 551,05-07-2024,DevOps,CI/CD
+552,Student 552,06-07-2024,Java,Spring Boot
+553,Student 553,07-07-2024,Python,AI
+554,Student 554,08-07-2024,JavaScript,Angular
+555,Student 555,09-07-2024,DevOps,Docker
+556,Student 556,10-07-2024,Java,Spring Boot
+557,Student 557,11-07-2024,Python,ML
+558,Student 558,12-07-2024,JavaScript,React
+559,Student 559,13-07-2024,DevOps,Kubernetes
+560,Student 560,14-07-2024,Java,Spring Boot
+561,Student 561,15-07-2024,Python,Data Science
+562,Student 562,16-07-2024,JavaScript,NodeJS
+563,Student 563,17-07-2024,DevOps,CI/CD
+564,Student 564,18-07-2024,Java,Spring Boot
+565,Student 565,19-07-2024,Python,AI
+566,Student 566,20-07-2024,JavaScript,Angular
+567,Student 567,21-07-2024,DevOps,Docker
+568,Student 568,22-07-2024,Java,Spring Boot
+569,Student 569,23-07-2024,Python,ML
+570,Student 570,24-07-2024,JavaScript,React
+571,Student 571,25-07-2024,DevOps,Kubernetes
+572,Student 572,26-07-2024,Java,Spring Boot
+573,Student 573,27-07-2024,Python,Data Science
+574,Student 574,28-07-2024,JavaScript,NodeJS
+575,Student 575,29-07-2024,DevOps,CI/CD
+576,Student 576,30-07-2024,Java,Spring Boot
+577,Student 577,31-07-2024,Python,AI
+578,Student 578,01-08-2024,JavaScript,Angular
+579,Student 579,02-08-2024,DevOps,Docker
+580,Student 580,03-08-2024,Java,Spring Boot
+581,Student 581,04-08-2024,Python,ML
+582,Student 582,05-08-2024,JavaScript,React
+583,Student 583,06-08-2024,DevOps,Kubernetes
+584,Student 584,07-08-2024,Java,Spring Boot
+585,Student 585,08-08-2024,Python,Data Science
+586,Student 586,09-08-2024,JavaScript,NodeJS
+587,Student 587,10-08-2024,DevOps,CI/CD
+588,Student 588,11-08-2024,Java,Spring Boot
+589,Student 589,12-08-2024,Python,AI
+590,Student 590,13-08-2024,JavaScript,Angular
+591,Student 591,14-08-2024,DevOps,Docker
+592,Student 592,15-08-2024,Java,Spring Boot
+593,Student 593,16-08-2024,Python,ML
+594,Student 594,17-08-2024,JavaScript,React
+595,Student 595,18-08-2024,DevOps,Kubernetes
+596,Student 596,19-08-2024,Java,Spring Boot
+597,Student 597,20-08-2024,Python,Data Science
+598,Student 598,21-08-2024,JavaScript,NodeJS
+599,Student 599,22-08-2024,DevOps,CI/CD
+600,Student 600,23-08-2024,Java,Spring Boot
+601,Student 601,24-08-2024,Python,AI
+602,Student 602,25-08-2024,JavaScript,Angular
+603,Student 603,26-08-2024,DevOps,Docker
+604,Student 604,27-08-2024,Java,Spring Boot
+605,Student 605,28-08-2024,Python,ML
+606,Student 606,29-08-2024,JavaScript,React
+607,Student 607,30-08-2024,DevOps,Kubernetes
+608,Student 608,31-08-2024,Java,Spring Boot
+609,Student 609,01-09-2024,Python,Data Science
+610,Student 610,02-09-2024,JavaScript,NodeJS
+611,Student 611,03-09-2024,DevOps,CI/CD
+612,Student 612,04-09-2024,Java,Spring Boot
+613,Student 613,05-09-2024,Python,AI
+614,Student 614,06-09-2024,JavaScript,Angular
+615,Student 615,07-09-2024,DevOps,Docker
+616,Student 616,08-09-2024,Java,Spring Boot
+617,Student 617,09-09-2024,Python,ML
+618,Student 618,10-09-2024,JavaScript,React
+619,Student 619,11-09-2024,DevOps,Kubernetes
+620,Student 620,12-09-2024,Java,Spring Boot
+621,Student 621,13-09-2024,Python,Data Science
+622,Student 622,14-09-2024,JavaScript,NodeJS
+623,Student 623,15-09-2024,DevOps,CI/CD
+624,Student 624,16-09-2024,Java,Spring Boot
+625,Student 625,17-09-2024,Python,AI
+626,Student 626,18-09-2024,JavaScript,Angular
+627,Student 627,19-09-2024,DevOps,Docker
+628,Student 628,20-09-2024,Java,Spring Boot
+629,Student 629,21-09-2024,Python,ML
+630,Student 630,22-09-2024,JavaScript,React
+631,Student 631,23-09-2024,DevOps,Kubernetes
+632,Student 632,24-09-2024,Java,Spring Boot
+633,Student 633,25-09-2024,Python,Data Science
+634,Student 634,26-09-2024,JavaScript,NodeJS
+635,Student 635,27-09-2024,DevOps,CI/CD
+636,Student 636,28-09-2024,Java,Spring Boot
+637,Student 637,29-09-2024,Python,AI
+638,Student 638,30-09-2024,JavaScript,Angular
+639,Student 639,01-10-2024,DevOps,Docker
+640,Student 640,02-10-2024,Java,Spring Boot
+641,Student 641,03-10-2024,Python,ML
+642,Student 642,04-10-2024,JavaScript,React
+643,Student 643,05-10-2024,DevOps,Kubernetes
+644,Student 644,06-10-2024,Java,Spring Boot
+645,Student 645,07-10-2024,Python,Data Science
+646,Student 646,08-10-2024,JavaScript,NodeJS
+647,Student 647,09-10-2024,DevOps,CI/CD
+648,Student 648,10-10-2024,Java,Spring Boot
+649,Student 649,11-10-2024,Python,AI
+650,Student 650,12-10-2024,JavaScript,Angular
+651,Student 651,13-10-2024,DevOps,Docker
+652,Student 652,14-10-2024,Java,Spring Boot
+653,Student 653,15-10-2024,Python,ML
+654,Student 654,16-10-2024,JavaScript,React
+655,Student 655,17-10-2024,DevOps,Kubernetes
+656,Student 656,18-10-2024,Java,Spring Boot
+657,Student 657,19-10-2024,Python,Data Science
+658,Student 658,20-10-2024,JavaScript,NodeJS
+659,Student 659,21-10-2024,DevOps,CI/CD
+660,Student 660,22-10-2024,Java,Spring Boot
+661,Student 661,23-10-2024,Python,AI
+662,Student 662,24-10-2024,JavaScript,Angular
+663,Student 663,25-10-2024,DevOps,Docker
+664,Student 664,26-10-2024,Java,Spring Boot
+665,Student 665,27-10-2024,Python,ML
+666,Student 666,28-10-2024,JavaScript,React
+667,Student 667,29-10-2024,DevOps,Kubernetes
+668,Student 668,30-10-2024,Java,Spring Boot
+669,Student 669,31-10-2024,Python,Data Science
+670,Student 670,01-11-2024,JavaScript,NodeJS
+671,Student 671,02-11-2024,DevOps,CI/CD
+672,Student 672,03-11-2024,Java,Spring Boot
+673,Student 673,04-11-2024,Python,AI
+674,Student 674,05-11-2024,JavaScript,Angular
+675,Student 675,06-11-2024,DevOps,Docker
+676,Student 676,07-11-2024,Java,Spring Boot
+677,Student 677,08-11-2024,Python,ML
+678,Student 678,09-11-2024,JavaScript,React
+679,Student 679,10-11-2024,DevOps,Kubernetes
+680,Student 680,11-11-2024,Java,Spring Boot
+681,Student 681,12-11-2024,Python,Data Science
+682,Student 682,13-11-2024,JavaScript,NodeJS
+683,Student 683,14-11-2024,DevOps,CI/CD
+684,Student 684,15-11-2024,Java,Spring Boot
+685,Student 685,16-11-2024,Python,AI
+686,Student 686,17-11-2024,JavaScript,Angular
+687,Student 687,18-11-2024,DevOps,Docker
+688,Student 688,19-11-2024,Java,Spring Boot
+689,Student 689,20-11-2024,Python,ML
+690,Student 690,21-11-2024,JavaScript,React
+691,Student 691,22-11-2024,DevOps,Kubernetes
+692,Student 692,23-11-2024,Java,Spring Boot
+693,Student 693,24-11-2024,Python,Data Science
+694,Student 694,25-11-2024,JavaScript,NodeJS
+695,Student 695,26-11-2024,DevOps,CI/CD
+696,Student 696,27-11-2024,Java,Spring Boot
+697,Student 697,28-11-2024,Python,AI
+698,Student 698,29-11-2024,JavaScript,Angular
+699,Student 699,30-11-2024,DevOps,Docker
+700,Student 700,01-12-2024,Java,Spring Boot
+701,Student 701,02-12-2024,Python,ML
+702,Student 702,03-12-2024,JavaScript,React
+703,Student 703,04-12-2024,DevOps,Kubernetes
+704,Student 704,05-12-2024,Java,Spring Boot
+705,Student 705,06-12-2024,Python,Data Science
+706,Student 706,07-12-2024,JavaScript,NodeJS
+707,Student 707,08-12-2024,DevOps,CI/CD
+708,Student 708,09-12-2024,Java,Spring Boot
+709,Student 709,10-12-2024,Python,AI
+710,Student 710,11-12-2024,JavaScript,Angular
+711,Student 711,12-12-2024,DevOps,Docker
+712,Student 712,13-12-2024,Java,Spring Boot
+713,Student 713,14-12-2024,Python,ML
+714,Student 714,15-12-2024,JavaScript,React
+715,Student 715,16-12-2024,DevOps,Kubernetes
+716,Student 716,17-12-2024,Java,Spring Boot
+717,Student 717,18-12-2024,Python,Data Science
+718,Student 718,19-12-2024,JavaScript,NodeJS
+719,Student 719,20-12-2024,DevOps,CI/CD
+720,Student 720,21-12-2024,Java,Spring Boot
+721,Student 721,22-12-2024,Python,AI
+722,Student 722,23-12-2024,JavaScript,Angular
+723,Student 723,24-12-2024,DevOps,Docker
+724,Student 724,25-12-2024,Java,Spring Boot
+725,Student 725,26-12-2024,Python,ML
+726,Student 726,27-12-2024,JavaScript,React
+727,Student 727,28-12-2024,DevOps,Kubernetes
+728,Student 728,29-12-2024,Java,Spring Boot
+729,Student 729,30-12-2024,Python,Data Science
+730,Student 730,31-12-2024,JavaScript,NodeJS
+731,Student 731,01-01-2025,DevOps,CI/CD
+732,Student 732,02-01-2025,Java,Spring Boot
+733,Student 733,03-01-2025,Python,AI
+734,Student 734,04-01-2025,JavaScript,Angular
+735,Student 735,05-01-2025,DevOps,Docker
+736,Student 736,06-01-2025,Java,Spring Boot
+737,Student 737,07-01-2025,Python,ML
+738,Student 738,08-01-2025,JavaScript,React
+739,Student 739,09-01-2025,DevOps,Kubernetes
+740,Student 740,10-01-2025,Java,Spring Boot
+741,Student 741,11-01-2025,Python,Data Science
+742,Student 742,12-01-2025,JavaScript,NodeJS
+743,Student 743,13-01-2025,DevOps,CI/CD
+744,Student 744,14-01-2025,Java,Spring Boot
+745,Student 745,15-01-2025,Python,AI
+746,Student 746,16-01-2025,JavaScript,Angular
+747,Student 747,17-01-2025,DevOps,Docker
+748,Student 748,18-01-2025,Java,Spring Boot
+749,Student 749,19-01-2025,Python,ML
+750,Student 750,20-01-2025,JavaScript,React
+751,Student 751,21-01-2025,DevOps,Kubernetes
+752,Student 752,22-01-2025,Java,Spring Boot
+753,Student 753,23-01-2025,Python,Data Science
+754,Student 754,24-01-2025,JavaScript,NodeJS
+755,Student 755,25-01-2025,DevOps,CI/CD
+756,Student 756,26-01-2025,Java,Spring Boot
+757,Student 757,27-01-2025,Python,AI
+758,Student 758,28-01-2025,JavaScript,Angular
+759,Student 759,29-01-2025,DevOps,Docker
+760,Student 760,30-01-2025,Java,Spring Boot
+761,Student 761,31-01-2025,Python,ML
+762,Student 762,01-02-2025,JavaScript,React
+763,Student 763,02-02-2025,DevOps,Kubernetes
+764,Student 764,03-02-2025,Java,Spring Boot
+765,Student 765,04-02-2025,Python,Data Science
+766,Student 766,05-02-2025,JavaScript,NodeJS
+767,Student 767,06-02-2025,DevOps,CI/CD
+768,Student 768,07-02-2025,Java,Spring Boot
+769,Student 769,08-02-2025,Python,AI
+770,Student 770,09-02-2025,JavaScript,Angular
+771,Student 771,10-02-2025,DevOps,Docker
+772,Student 772,11-02-2025,Java,Spring Boot
+773,Student 773,12-02-2025,Python,ML
+774,Student 774,13-02-2025,JavaScript,React
+775,Student 775,14-02-2025,DevOps,Kubernetes
+776,Student 776,15-02-2025,Java,Spring Boot
+777,Student 777,16-02-2025,Python,Data Science
+778,Student 778,17-02-2025,JavaScript,NodeJS
+779,Student 779,18-02-2025,DevOps,CI/CD
+780,Student 780,19-02-2025,Java,Spring Boot
+781,Student 781,20-02-2025,Python,AI
+782,Student 782,21-02-2025,JavaScript,Angular
+783,Student 783,22-02-2025,DevOps,Docker
+784,Student 784,23-02-2025,Java,Spring Boot
+785,Student 785,24-02-2025,Python,ML
+786,Student 786,25-02-2025,JavaScript,React
+787,Student 787,26-02-2025,DevOps,Kubernetes
+788,Student 788,27-02-2025,Java,Spring Boot
+789,Student 789,28-02-2025,Python,Data Science
+790,Student 790,01-03-2025,JavaScript,NodeJS
+791,Student 791,02-03-2025,DevOps,CI/CD
+792,Student 792,03-03-2025,Java,Spring Boot
+793,Student 793,04-03-2025,Python,AI
+794,Student 794,05-03-2025,JavaScript,Angular
+795,Student 795,06-03-2025,DevOps,Docker
+796,Student 796,07-03-2025,Java,Spring Boot
+797,Student 797,08-03-2025,Python,ML
+798,Student 798,09-03-2025,JavaScript,React
+799,Student 799,10-03-2025,DevOps,Kubernetes
+800,Student 800,11-03-2025,Java,Spring Boot
+801,Student 801,12-03-2025,Python,Data Science
+802,Student 802,13-03-2025,JavaScript,NodeJS
+803,Student 803,14-03-2025,DevOps,CI/CD
+804,Student 804,15-03-2025,Java,Spring Boot
+805,Student 805,16-03-2025,Python,AI
+806,Student 806,17-03-2025,JavaScript,Angular
+807,Student 807,18-03-2025,DevOps,Docker
+808,Student 808,19-03-2025,Java,Spring Boot
+809,Student 809,20-03-2025,Python,ML
+810,Student 810,21-03-2025,JavaScript,React
+811,Student 811,22-03-2025,DevOps,Kubernetes
+812,Student 812,23-03-2025,Java,Spring Boot
+813,Student 813,24-03-2025,Python,Data Science
+814,Student 814,25-03-2025,JavaScript,NodeJS
+815,Student 815,26-03-2025,DevOps,CI/CD
+816,Student 816,27-03-2025,Java,Spring Boot
+817,Student 817,28-03-2025,Python,AI
+818,Student 818,29-03-2025,JavaScript,Angular
+819,Student 819,30-03-2025,DevOps,Docker
+820,Student 820,31-03-2025,Java,Spring Boot
+821,Student 821,01-04-2025,Python,ML
+822,Student 822,02-04-2025,JavaScript,React
+823,Student 823,03-04-2025,DevOps,Kubernetes
+824,Student 824,04-04-2025,Java,Spring Boot
+825,Student 825,05-04-2025,Python,Data Science
+826,Student 826,06-04-2025,JavaScript,NodeJS
+827,Student 827,07-04-2025,DevOps,CI/CD
+828,Student 828,08-04-2025,Java,Spring Boot
+829,Student 829,09-04-2025,Python,AI
+830,Student 830,10-04-2025,JavaScript,Angular
+831,Student 831,11-04-2025,DevOps,Docker
+832,Student 832,12-04-2025,Java,Spring Boot
+833,Student 833,13-04-2025,Python,ML
+834,Student 834,14-04-2025,JavaScript,React
+835,Student 835,15-04-2025,DevOps,Kubernetes
+836,Student 836,16-04-2025,Java,Spring Boot
+837,Student 837,17-04-2025,Python,Data Science
+838,Student 838,18-04-2025,JavaScript,NodeJS
+839,Student 839,19-04-2025,DevOps,CI/CD
+840,Student 840,20-04-2025,Java,Spring Boot
+841,Student 841,21-04-2025,Python,AI
+842,Student 842,22-04-2025,JavaScript,Angular
+843,Student 843,23-04-2025,DevOps,Docker
+844,Student 844,24-04-2025,Java,Spring Boot
+845,Student 845,25-04-2025,Python,ML
+846,Student 846,26-04-2025,JavaScript,React
+847,Student 847,27-04-2025,DevOps,Kubernetes
+848,Student 848,28-04-2025,Java,Spring Boot
+849,Student 849,29-04-2025,Python,Data Science
+850,Student 850,30-04-2025,JavaScript,NodeJS
+851,Student 851,01-05-2025,DevOps,CI/CD
+852,Student 852,02-05-2025,Java,Spring Boot
+853,Student 853,03-05-2025,Python,AI
+854,Student 854,04-05-2025,JavaScript,Angular
+855,Student 855,05-05-2025,DevOps,Docker
+856,Student 856,06-05-2025,Java,Spring Boot
+857,Student 857,07-05-2025,Python,ML
+858,Student 858,08-05-2025,JavaScript,React
+859,Student 859,09-05-2025,DevOps,Kubernetes
+860,Student 860,10-05-2025,Java,Spring Boot
+861,Student 861,11-05-2025,Python,Data Science
+862,Student 862,12-05-2025,JavaScript,NodeJS
+863,Student 863,13-05-2025,DevOps,CI/CD
+864,Student 864,14-05-2025,Java,Spring Boot
+865,Student 865,15-05-2025,Python,AI
+866,Student 866,16-05-2025,JavaScript,Angular
+867,Student 867,17-05-2025,DevOps,Docker
+868,Student 868,18-05-2025,Java,Spring Boot
+869,Student 869,19-05-2025,Python,ML
+870,Student 870,20-05-2025,JavaScript,React
+871,Student 871,21-05-2025,DevOps,Kubernetes
+872,Student 872,22-05-2025,Java,Spring Boot
+873,Student 873,23-05-2025,Python,Data Science
+874,Student 874,24-05-2025,JavaScript,NodeJS
+875,Student 875,25-05-2025,DevOps,CI/CD
+876,Student 876,26-05-2025,Java,Spring Boot
+877,Student 877,27-05-2025,Python,AI
+878,Student 878,28-05-2025,JavaScript,Angular
+879,Student 879,29-05-2025,DevOps,Docker
+880,Student 880,30-05-2025,Java,Spring Boot
+881,Student 881,31-05-2025,Python,ML
+882,Student 882,01-06-2025,JavaScript,React
+883,Student 883,02-06-2025,DevOps,Kubernetes
+884,Student 884,03-06-2025,Java,Spring Boot
+885,Student 885,04-06-2025,Python,Data Science
+886,Student 886,05-06-2025,JavaScript,NodeJS
+887,Student 887,06-06-2025,DevOps,CI/CD
+888,Student 888,07-06-2025,Java,Spring Boot
+889,Student 889,08-06-2025,Python,AI
+890,Student 890,09-06-2025,JavaScript,Angular
+891,Student 891,10-06-2025,DevOps,Docker
+892,Student 892,11-06-2025,Java,Spring Boot
+893,Student 893,12-06-2025,Python,ML
+894,Student 894,13-06-2025,JavaScript,React
+895,Student 895,14-06-2025,DevOps,Kubernetes
+896,Student 896,15-06-2025,Java,Spring Boot
+897,Student 897,16-06-2025,Python,Data Science
+898,Student 898,17-06-2025,JavaScript,NodeJS
+899,Student 899,18-06-2025,DevOps,CI/CD
+900,Student 900,19-06-2025,Java,Spring Boot
+901,Student 901,20-06-2025,Python,AI
+902,Student 902,21-06-2025,JavaScript,Angular
+903,Student 903,22-06-2025,DevOps,Docker
+904,Student 904,23-06-2025,Java,Spring Boot
+905,Student 905,24-06-2025,Python,ML
+906,Student 906,25-06-2025,JavaScript,React
+907,Student 907,26-06-2025,DevOps,Kubernetes
+908,Student 908,27-06-2025,Java,Spring Boot
+909,Student 909,28-06-2025,Python,Data Science
+910,Student 910,29-06-2025,JavaScript,NodeJS
+911,Student 911,30-06-2025,DevOps,CI/CD
+912,Student 912,01-07-2025,Java,Spring Boot
+913,Student 913,02-07-2025,Python,AI
+914,Student 914,03-07-2025,JavaScript,Angular
+915,Student 915,04-07-2025,DevOps,Docker
+916,Student 916,05-07-2025,Java,Spring Boot
+917,Student 917,06-07-2025,Python,ML
+918,Student 918,07-07-2025,JavaScript,React
+919,Student 919,08-07-2025,DevOps,Kubernetes
+920,Student 920,09-07-2025,Java,Spring Boot
+921,Student 921,10-07-2025,Python,Data Science
+922,Student 922,11-07-2025,JavaScript,NodeJS
+923,Student 923,12-07-2025,DevOps,CI/CD
+924,Student 924,13-07-2025,Java,Spring Boot
+925,Student 925,14-07-2025,Python,AI
+926,Student 926,15-07-2025,JavaScript,Angular
+927,Student 927,16-07-2025,DevOps,Docker
+928,Student 928,17-07-2025,Java,Spring Boot
+929,Student 929,18-07-2025,Python,ML
+930,Student 930,19-07-2025,JavaScript,React
+931,Student 931,20-07-2025,DevOps,Kubernetes
+932,Student 932,21-07-2025,Java,Spring Boot
+933,Student 933,22-07-2025,Python,Data Science
+934,Student 934,23-07-2025,JavaScript,NodeJS
+935,Student 935,24-07-2025,DevOps,CI/CD
+936,Student 936,25-07-2025,Java,Spring Boot
+937,Student 937,26-07-2025,Python,AI
+938,Student 938,27-07-2025,JavaScript,Angular
+939,Student 939,28-07-2025,DevOps,Docker
+940,Student 940,29-07-2025,Java,Spring Boot
+941,Student 941,30-07-2025,Python,ML
+942,Student 942,31-07-2025,JavaScript,React
+943,Student 943,01-08-2025,DevOps,Kubernetes
+944,Student 944,02-08-2025,Java,Spring Boot
+945,Student 945,03-08-2025,Python,Data Science
+946,Student 946,04-08-2025,JavaScript,NodeJS
+947,Student 947,05-08-2025,DevOps,CI/CD
+948,Student 948,06-08-2025,Java,Spring Boot
+949,Student 949,07-08-2025,Python,AI
+950,Student 950,08-08-2025,JavaScript,Angular
+951,Student 951,09-08-2025,DevOps,Docker
+952,Student 952,10-08-2025,Java,Spring Boot
+953,Student 953,11-08-2025,Python,ML
+954,Student 954,12-08-2025,JavaScript,React
+955,Student 955,13-08-2025,DevOps,Kubernetes
+956,Student 956,14-08-2025,Java,Spring Boot
+957,Student 957,15-08-2025,Python,Data Science
+958,Student 958,16-08-2025,JavaScript,NodeJS
+959,Student 959,17-08-2025,DevOps,CI/CD
+960,Student 960,18-08-2025,Java,Spring Boot
+961,Student 961,19-08-2025,Python,AI
+962,Student 962,20-08-2025,JavaScript,Angular
+963,Student 963,21-08-2025,DevOps,Docker
+964,Student 964,22-08-2025,Java,Spring Boot
+965,Student 965,23-08-2025,Python,ML
+966,Student 966,24-08-2025,JavaScript,React
+967,Student 967,25-08-2025,DevOps,Kubernetes
+968,Student 968,26-08-2025,Java,Spring Boot
+969,Student 969,27-08-2025,Python,Data Science
+970,Student 970,28-08-2025,JavaScript,NodeJS
+971,Student 971,29-08-2025,DevOps,CI/CD
+972,Student 972,30-08-2025,Java,Spring Boot
+973,Student 973,31-08-2025,Python,AI
+974,Student 974,01-09-2025,JavaScript,Angular
+975,Student 975,02-09-2025,DevOps,Docker
+976,Student 976,03-09-2025,Java,Spring Boot
+977,Student 977,04-09-2025,Python,ML
+978,Student 978,05-09-2025,JavaScript,React
+979,Student 979,06-09-2025,DevOps,Kubernetes
+980,Student 980,07-09-2025,Java,Spring Boot
+981,Student 981,08-09-2025,Python,Data Science
+982,Student 982,09-09-2025,JavaScript,NodeJS
+983,Student 983,10-09-2025,DevOps,CI/CD
+984,Student 984,11-09-2025,Java,Spring Boot
+985,Student 985,12-09-2025,Python,AI
+986,Student 986,13-09-2025,JavaScript,Angular
+987,Student 987,14-09-2025,DevOps,Docker
+988,Student 988,15-09-2025,Java,Spring Boot
+989,Student 989,16-09-2025,Python,ML
+990,Student 990,17-09-2025,JavaScript,React
+991,Student 991,18-09-2025,DevOps,Kubernetes
+992,Student 992,19-09-2025,Java,Spring Boot
+993,Student 993,20-09-2025,Python,Data Science
+994,Student 994,21-09-2025,JavaScript,NodeJS
+995,Student 995,22-09-2025,DevOps,CI/CD
+996,Student 996,23-09-2025,Java,Spring Boot
+997,Student 997,24-09-2025,Python,AI
+998,Student 998,25-09-2025,JavaScript,Angular
+999,Student 999,26-09-2025,DevOps,Docker
+1000,Student 1000,27-09-2025,Java,Spring Boot
