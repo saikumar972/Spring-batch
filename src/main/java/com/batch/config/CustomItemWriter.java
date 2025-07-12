@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CustomItemWriter<S> implements ItemWriter<StudentEntity> {
-    @Autowired
-    StudentRepo repo;
+public class CustomItemWriter implements ItemWriter<StudentEntity>{
+@Autowired
+StudentRepo studentRepo;
     @Override
-    public void write(Chunk<? extends StudentEntity> chunk) throws Exception {
-        System.out.println("Thread is "+Thread.currentThread().getName());
-        repo.saveAll(chunk);
+    public void write(Chunk<? extends StudentEntity> students) throws Exception {
+        System.out.println("Current Thread is "+Thread.currentThread().getName());
+        studentRepo.saveAll(students);
     }
 }

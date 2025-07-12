@@ -1,11 +1,11 @@
 package com.batch.config;
 
 import com.batch.entity.StudentEntity;
-import com.batch.repo.StudentRepo;
 import com.batch.service.ColumnRangePartitioner;
-import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.partition.PartitionHandler;
 import org.springframework.batch.core.partition.support.Partitioner;
@@ -19,6 +19,7 @@ import org.springframework.batch.item.file.LineMapper;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
@@ -27,10 +28,11 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-//@EnableBatchProcessing
-@AllArgsConstructor
+@EnableBatchProcessing
+@Slf4j
 public class BatchConfiguration {
-    private CustomItemWriter itemWriter;
+    @Autowired
+    CustomItemWriter customItemWriter;
     @Bean
     public ItemReader<StudentEntity> itemReader(){
         FlatFileItemReader<StudentEntity> itemReader=new FlatFileItemReader<>();
@@ -38,6 +40,7 @@ public class BatchConfiguration {
         itemReader.setLinesToSkip(1);
         itemReader.setName("csv-reader");
         itemReader.setLineMapper(lineMapper());
+        log.info("BatchConfiguration : checking the itemReader method");
         return itemReader;
     }
 
@@ -52,16 +55,19 @@ public class BatchConfiguration {
       // fieldSetMapper.setConversionService(conversionService()); // Just this line added
         lineMapper.setLineTokenizer(lineTokenizer);
         lineMapper.setFieldSetMapper(fieldSetMapper);
+        log.info("BatchConfiguration : checking the itemReader lineMapper method");
         return lineMapper;
     }
     @Bean
     public StudentItemProcessor itemProcessor(){
+        log.info("BatchConfiguration : checking the itemProcessor method");
         return new StudentItemProcessor();
     }
 
     @Bean
     public ItemWriter<StudentEntity> itemWriter(){
-        return new CustomItemWriter<StudentEntity>();
+        log.info("BatchConfiguration : checking the itemWriter method");
+        return customItemWriter;
     }
 
     @Bean
@@ -105,23 +111,24 @@ public class BatchConfiguration {
 
     @Bean
     public TaskExecutor taskExecutor(){
-//        SimpleAsyncTaskExecutor simpleasyncTaskExecutor=new SimpleAsyncTaskExecutor();
-//        simpleasyncTaskExecutor.setConcurrencyLimit(10);
-//        return simpleasyncTaskExecutor;
         ThreadPoolTaskExecutor taskExecutor=new ThreadPoolTaskExecutor();
         taskExecutor.setCorePoolSize(4);
         taskExecutor.setMaxPoolSize(4);
         taskExecutor.setQueueCapacity(4);
         taskExecutor.setThreadNamePrefix("partition-thread-");
+        taskExecutor.initialize();
         return taskExecutor;
+//        SimpleAsyncTaskExecutor simpleAsyncTaskExecutor=new SimpleAsyncTaskExecutor();
+//        simpleAsyncTaskExecutor.setConcurrencyLimit(10);
+//        return simpleAsyncTaskExecutor;
     }
 
-//    @Bean
-//    public ConversionService conversionService() {
-//        DefaultConversionService service = new DefaultConversionService();
-//        service.addConverter(String.class, LocalDate.class, source ->
-//                LocalDate.parse(source, DateTimeFormatter.ofPattern("dd-MM-yyyy")));
-//        return service;
-//    }
+/*    @Bean
+    public ConversionService conversionService() {
+        DefaultConversionService service = new DefaultConversionService();
+        service.addConverter(String.class, LocalDate.class, source ->
+                LocalDate.parse(source, DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+        return service;
+    }*/
 
 }
