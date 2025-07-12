@@ -2,16 +2,18 @@ package com.batch.config;
 
 import com.batch.entity.StudentEntity;
 import com.batch.repo.StudentRepo;
+import com.batch.service.ColumnRangePartitioner;
 import lombok.AllArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.job.builder.JobBuilder;
+import org.springframework.batch.core.partition.PartitionHandler;
+import org.springframework.batch.core.partition.support.Partitioner;
+import org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
-import org.springframework.batch.item.data.RepositoryItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.LineMapper;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
@@ -19,21 +21,16 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.convert.ConversionService;
-import org.springframework.core.convert.support.DefaultConversionService;
 import org.springframework.core.io.FileSystemResource;
-import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.PlatformTransactionManager;
-
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 @Configuration
 //@EnableBatchProcessing
 @AllArgsConstructor
 public class BatchConfiguration {
-    private StudentRepo studentRepo;
+    private CustomItemWriter itemWriter;
     @Bean
     public ItemReader<StudentEntity> itemReader(){
         FlatFileItemReader<StudentEntity> itemReader=new FlatFileItemReader<>();
@@ -64,16 +61,34 @@ public class BatchConfiguration {
 
     @Bean
     public ItemWriter<StudentEntity> itemWriter(){
-        RepositoryItemWriter<StudentEntity> itemWriter=new RepositoryItemWriter<>();
-        itemWriter.setRepository(studentRepo);
-        itemWriter.setMethodName("save");
-        return itemWriter;
+        return new CustomItemWriter<StudentEntity>();
     }
 
     @Bean
-    public Step step(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
-        return new StepBuilder("step",jobRepository).
-                <StudentEntity,StudentEntity>chunk(10,platformTransactionManager)
+    public Partitioner customPartitioner(){
+        return new ColumnRangePartitioner();
+    }
+
+    @Bean
+    public PartitionHandler customPartitionHandler(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
+        TaskExecutorPartitionHandler partitionHandler=new TaskExecutorPartitionHandler();
+        partitionHandler.setGridSize(4);
+        partitionHandler.setStep(slaveStep(jobRepository,platformTransactionManager));
+        partitionHandler.setTaskExecutor(taskExecutor());
+        return partitionHandler;
+    }
+
+    private Step masterStep(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager) {
+        return new StepBuilder("master-step",jobRepository)
+                .partitioner(slaveStep(jobRepository,platformTransactionManager).getName(),customPartitioner())
+                .partitionHandler(customPartitionHandler(jobRepository,platformTransactionManager))
+                .build();
+    }
+
+    @Bean
+    public Step slaveStep(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
+        return new StepBuilder("slave-step",jobRepository).
+                <StudentEntity,StudentEntity>chunk(250,platformTransactionManager)
                 .reader(itemReader())
                 .processor(itemProcessor())
                 .writer(itemWriter())
@@ -84,15 +99,21 @@ public class BatchConfiguration {
     @Bean
     public Job job(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
         return new JobBuilder("job",jobRepository)
-                .flow(step(jobRepository,platformTransactionManager))
+                .flow(masterStep(jobRepository,platformTransactionManager))
                 .end().build();
     }
 
     @Bean
     public TaskExecutor taskExecutor(){
-        SimpleAsyncTaskExecutor simpleasyncTaskExecutor=new SimpleAsyncTaskExecutor();
-        simpleasyncTaskExecutor.setConcurrencyLimit(10);
-        return simpleasyncTaskExecutor;
+//        SimpleAsyncTaskExecutor simpleasyncTaskExecutor=new SimpleAsyncTaskExecutor();
+//        simpleasyncTaskExecutor.setConcurrencyLimit(10);
+//        return simpleasyncTaskExecutor;
+        ThreadPoolTaskExecutor taskExecutor=new ThreadPoolTaskExecutor();
+        taskExecutor.setCorePoolSize(4);
+        taskExecutor.setMaxPoolSize(4);
+        taskExecutor.setQueueCapacity(4);
+        taskExecutor.setThreadNamePrefix("partition-thread-");
+        return taskExecutor;
     }
 
 //    @Bean
