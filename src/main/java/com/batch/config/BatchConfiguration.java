@@ -2,7 +2,8 @@ package com.batch.config;
 
 import com.batch.entity.StudentEntity;
 import com.batch.service.ColumnRangePartitioner;
-import lombok.extern.slf4j.Slf4j;
+import lombok.AllArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -19,7 +20,6 @@ import org.springframework.batch.item.file.LineMapper;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
@@ -29,18 +29,21 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 @EnableBatchProcessing
-@Slf4j
+@Log4j2
+@AllArgsConstructor
 public class BatchConfiguration {
-    @Autowired
     CustomItemWriter customItemWriter;
+    JobRepository jobRepository;
+    PlatformTransactionManager platformTransactionManager;
     @Bean
     public ItemReader<StudentEntity> itemReader(){
+        log.info("BatchConfiguration : itemReader method start");
         FlatFileItemReader<StudentEntity> itemReader=new FlatFileItemReader<>();
-        itemReader.setResource(new FileSystemResource("src/main/resources/student_with_id.csv"));
+        itemReader.setResource(new FileSystemResource("D:/Downloads/student_with_id.csv"));
         itemReader.setLinesToSkip(1);
         itemReader.setName("csv-reader");
         itemReader.setLineMapper(lineMapper());
-        log.info("BatchConfiguration : checking the itemReader method");
+        log.info("BatchConfiguration : itemReader method end");
         return itemReader;
     }
 
@@ -55,18 +58,18 @@ public class BatchConfiguration {
       // fieldSetMapper.setConversionService(conversionService()); // Just this line added
         lineMapper.setLineTokenizer(lineTokenizer);
         lineMapper.setFieldSetMapper(fieldSetMapper);
-        log.info("BatchConfiguration : checking the itemReader lineMapper method");
+        log.info("BatchConfiguration : itemReader lineMapper method executed");
         return lineMapper;
     }
     @Bean
     public StudentItemProcessor itemProcessor(){
-        log.info("BatchConfiguration : checking the itemProcessor method");
+        log.info("BatchConfiguration : itemProcessor method");
         return new StudentItemProcessor();
     }
 
     @Bean
     public ItemWriter<StudentEntity> itemWriter(){
-        log.info("BatchConfiguration : checking the itemWriter method");
+        log.info("BatchConfiguration : itemWriter method");
         return customItemWriter;
     }
 
@@ -76,36 +79,35 @@ public class BatchConfiguration {
     }
 
     @Bean
-    public PartitionHandler customPartitionHandler(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
+    public PartitionHandler customPartitionHandler(){
         TaskExecutorPartitionHandler partitionHandler=new TaskExecutorPartitionHandler();
         partitionHandler.setGridSize(4);
-        partitionHandler.setStep(slaveStep(jobRepository,platformTransactionManager));
+        partitionHandler.setStep(slaveStep());
         partitionHandler.setTaskExecutor(taskExecutor());
         return partitionHandler;
     }
 
-    private Step masterStep(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager) {
+    private Step masterStep() {
         return new StepBuilder("master-step",jobRepository)
-                .partitioner(slaveStep(jobRepository,platformTransactionManager).getName(),customPartitioner())
-                .partitionHandler(customPartitionHandler(jobRepository,platformTransactionManager))
+                .partitioner(slaveStep().getName(),customPartitioner())
+                .partitionHandler(customPartitionHandler())
                 .build();
     }
 
     @Bean
-    public Step slaveStep(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
+    public Step slaveStep(){
         return new StepBuilder("slave-step",jobRepository).
                 <StudentEntity,StudentEntity>chunk(250,platformTransactionManager)
                 .reader(itemReader())
                 .processor(itemProcessor())
                 .writer(itemWriter())
-                .taskExecutor(taskExecutor())
                 .build();
     }
 
     @Bean
-    public Job job(JobRepository jobRepository, PlatformTransactionManager platformTransactionManager){
+    public Job job(){
         return new JobBuilder("job",jobRepository)
-                .flow(masterStep(jobRepository,platformTransactionManager))
+                .flow(masterStep())
                 .end().build();
     }
 
