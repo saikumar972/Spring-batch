@@ -1,18 +1,23 @@
 package com.batch.config;
 
 import com.batch.entity.StudentEntity;
+import com.batch.faultTolerance.StepSkipListener;
+import com.batch.faultTolerance.StepSkipPolicy;
 import com.batch.service.ColumnRangePartitioner;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.batch.core.Job;
+import org.springframework.batch.core.SkipListener;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
+import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.partition.PartitionHandler;
 import org.springframework.batch.core.partition.support.Partitioner;
 import org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler;
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
+import org.springframework.batch.core.step.skip.SkipPolicy;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
@@ -22,6 +27,7 @@ import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
@@ -39,7 +45,8 @@ public class BatchConfiguration {
     public ItemReader<StudentEntity> itemReader(){
         log.info("BatchConfiguration : itemReader method start");
         FlatFileItemReader<StudentEntity> itemReader=new FlatFileItemReader<>();
-        itemReader.setResource(new FileSystemResource("D:/Downloads/student_with_id.csv"));
+       // itemReader.setResource(new FileSystemResource("D:/Downloads/student_with_id.csv"));
+        itemReader.setResource(new ClassPathResource("student_with_id.csv"));
         itemReader.setLinesToSkip(1);
         itemReader.setName("csv-reader");
         itemReader.setLineMapper(lineMapper());
@@ -88,7 +95,7 @@ public class BatchConfiguration {
     }
 
     private Step masterStep() {
-        return new StepBuilder("master-step",jobRepository)
+        return new StepBuilder("masterStep",jobRepository)
                 .partitioner(slaveStep().getName(),customPartitioner())
                 .partitionHandler(customPartitionHandler())
                 .build();
@@ -96,11 +103,14 @@ public class BatchConfiguration {
 
     @Bean
     public Step slaveStep(){
-        return new StepBuilder("slave-step",jobRepository).
+        return new StepBuilder("slaveStep",jobRepository).
                 <StudentEntity,StudentEntity>chunk(250,platformTransactionManager)
                 .reader(itemReader())
                 .processor(itemProcessor())
                 .writer(itemWriter())
+                .faultTolerant()
+                .skipPolicy(skipPolicy())
+                .listener(skipListener())
                 .build();
     }
 
@@ -120,9 +130,15 @@ public class BatchConfiguration {
         taskExecutor.setThreadNamePrefix("partition-thread-");
         taskExecutor.initialize();
         return taskExecutor;
-//        SimpleAsyncTaskExecutor simpleAsyncTaskExecutor=new SimpleAsyncTaskExecutor();
-//        simpleAsyncTaskExecutor.setConcurrencyLimit(10);
-//        return simpleAsyncTaskExecutor;
+    }
+    @Bean
+    public SkipPolicy skipPolicy(){
+        return new StepSkipPolicy();
+    }
+
+    @Bean
+    public SkipListener skipListener(){
+        return new StepSkipListener();
     }
 
 /*    @Bean
