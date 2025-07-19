@@ -18,20 +18,21 @@ import org.springframework.batch.core.partition.support.TaskExecutorPartitionHan
 import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.batch.core.step.skip.SkipPolicy;
-import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.file.FlatFileItemReader;
 import org.springframework.batch.item.file.LineMapper;
 import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.batch.item.file.mapping.DefaultLineMapper;
 import org.springframework.batch.item.file.transform.DelimitedLineTokenizer;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.PlatformTransactionManager;
+
+import java.io.File;
 
 @Configuration
 @EnableBatchProcessing
@@ -42,11 +43,12 @@ public class BatchConfiguration {
     JobRepository jobRepository;
     PlatformTransactionManager platformTransactionManager;
     @Bean
-    public ItemReader<StudentEntity> itemReader(){
+    @StepScope
+    public FlatFileItemReader<StudentEntity> itemReader(@Value("#{jobParameters[fullPathFileName]}") String pathToFile){
         log.info("BatchConfiguration : itemReader method start");
         FlatFileItemReader<StudentEntity> itemReader=new FlatFileItemReader<>();
        // itemReader.setResource(new FileSystemResource("D:/Downloads/student_with_id.csv"));
-        itemReader.setResource(new ClassPathResource("student_with_id.csv"));
+        itemReader.setResource(new FileSystemResource(new File(pathToFile)));
         itemReader.setLinesToSkip(1);
         itemReader.setName("csv-reader");
         itemReader.setLineMapper(lineMapper());
@@ -86,26 +88,26 @@ public class BatchConfiguration {
     }
 
     @Bean
-    public PartitionHandler customPartitionHandler(){
+    public PartitionHandler customPartitionHandler(FlatFileItemReader<StudentEntity> itemReader){
         TaskExecutorPartitionHandler partitionHandler=new TaskExecutorPartitionHandler();
         partitionHandler.setGridSize(4);
-        partitionHandler.setStep(slaveStep());
+        partitionHandler.setStep(slaveStep(itemReader));
         partitionHandler.setTaskExecutor(taskExecutor());
         return partitionHandler;
     }
 
-    private Step masterStep() {
+    private Step masterStep(FlatFileItemReader<StudentEntity> itemReader) {
         return new StepBuilder("masterStep",jobRepository)
-                .partitioner(slaveStep().getName(),customPartitioner())
-                .partitionHandler(customPartitionHandler())
+                .partitioner(slaveStep(itemReader).getName(),customPartitioner())
+                .partitionHandler(customPartitionHandler(itemReader))
                 .build();
     }
 
     @Bean
-    public Step slaveStep(){
+    public Step slaveStep(FlatFileItemReader<StudentEntity> itemReader){
         return new StepBuilder("slaveStep",jobRepository).
                 <StudentEntity,StudentEntity>chunk(250,platformTransactionManager)
-                .reader(itemReader())
+                .reader(itemReader)
                 .processor(itemProcessor())
                 .writer(itemWriter())
                 .faultTolerant()
@@ -115,9 +117,9 @@ public class BatchConfiguration {
     }
 
     @Bean
-    public Job job(){
+    public Job job(FlatFileItemReader<StudentEntity> itemReader){
         return new JobBuilder("job",jobRepository)
-                .flow(masterStep())
+                .flow(masterStep(itemReader))
                 .end().build();
     }
 
